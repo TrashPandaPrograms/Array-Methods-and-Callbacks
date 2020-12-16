@@ -15,6 +15,14 @@ Practice accessing data by console.log-ing the following pieces of data note, yo
 
 //(e) Winner of 2014 world cup final */
 
+const finals2014 = fifaData.filter(function(item){
+    return item.year===2014 && item.stage==="Final"
+})
+console.log(finals2014[0]["Home Team Name"])
+console.log(finals2014[0]["Away Team Name"])
+console.log(finals2014[0]["Home Team Goals"])
+console.log(finals2014[0]["Away Team Goals"])
+console.log(finals2014[0]["Win conditions"])
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use getFinals to do the following:
@@ -30,15 +38,14 @@ function getFinals(data) {
 console.log(getFinals(fifaData))
 
 
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function called getYears to do the following: 
 1. Receive an array
 2. Receive a callback function getFinals from task 2 
 3. Return an array called years containing all of the years in the getFinals data set*/
 
-function getYears(/* code here */) {
-    /* code here */
+function getYears() {
+    
 }
 
 
